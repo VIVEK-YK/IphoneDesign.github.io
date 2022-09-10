@@ -1,0 +1,43 @@
+body{
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background: rgb(12, 4, 50);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.phone{
+    height: 24rem;
+    width: 12rem;
+    border: 7px solid black;
+    border-radius: 2rem;
+    position: relative;
+    background: white;
+    background-image: url(https://picsum.photos/seed/picsum/192/384);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.phone::before{
+    content: "";
+    position: absolute;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 2rem;
+    height: 24.88rem;
+    width: 12.9rem;
+    left: -8px;
+    top: -8px;
+}
+.phone::after{
+    content: "";
+    position: absolute;
+    border: 1px solid black;
+    background: #000;
+    border-radius: 0 0 10px 10px;
+    height: 20px;
+    width: 50%;
+    left: 25%;
+   top: -1px;
+}
